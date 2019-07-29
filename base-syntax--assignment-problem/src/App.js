@@ -24,7 +24,7 @@ class App extends Component {
   render() {
     return (
       <div className="App">  
-        <UserInput changed={this.changedUserHandler} userName={ this.state.users.length > 0 ? this.state.users[0].userName : ''} />
+        <UserInput changed={this.changedUserHandler} userName={this.state.users[0].userName} />
 
         {this.state.users.map (user =>
           {
